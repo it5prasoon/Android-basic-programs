@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.takwolf.android:lock9view:0.0.11@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25083056a23f28366bcd9ffe2520c45c/jetified-lock9view-0.0.11/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25083056a23f28366bcd9ffe2520c45c/jetified-lock9view-0.0.11/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/25083056a23f28366bcd9ffe2520c45c/jetified-lock9view-0.0.11/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takwolf.android/lock9view/0.0.11/b911b3d63f783e84d17f5c89b3ee1ba04b37dcbf/lock9view-0.0.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takwolf.android/lock9view/0.0.11/d115f0c1095d4552f107e078f00074326e3cffa1/lock9view-0.0.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

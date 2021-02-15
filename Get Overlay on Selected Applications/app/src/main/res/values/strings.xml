@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Privvio</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ovarlay_permission_description">Permit drawing over other apps.</string>
+    <string name="usage_data_access_description">Allow app to see which apps you are using.</string>
+    <string name="information_pop_up">Overlay is Successfully created!
+    </string>
+</resources>
