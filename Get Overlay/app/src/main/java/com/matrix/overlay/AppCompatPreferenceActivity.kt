@@ -1,4 +1,4 @@
-package app.privvio.android
+package com.matrix.overlay
 
 import android.content.res.Configuration
 import android.os.Bundle

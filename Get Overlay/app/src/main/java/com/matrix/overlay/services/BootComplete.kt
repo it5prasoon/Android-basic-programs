@@ -1,4 +1,4 @@
-package app.privvio.android.services
+package com.matrix.overlay.services
 
 import android.app.AlarmManager
 import android.app.PendingIntent

@@ -1,4 +1,4 @@
-package app.privvio.android.data
+package com.matrix.overlay.data
 
 import android.content.Context
 import android.content.Intent

@@ -1,4 +1,4 @@
-package app.privvio.android
+package com.matrix.overlay
 
 import android.app.AlarmManager
 import android.app.AppOpsManager
@@ -17,8 +17,8 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
-import app.privvio.android.services.AlarmReceiver
-import app.privvio.android.services.AppCheckServices
+import com.matrix.overlay.services.AlarmReceiver
+import com.matrix.overlay.services.AppCheckServices
 
 /*
 Edited and written by Prasoon

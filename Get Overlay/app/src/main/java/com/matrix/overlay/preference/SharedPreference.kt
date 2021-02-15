@@ -1,15 +1,16 @@
-package app.privvio.android.preference
+package com.matrix.overlay.preference
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.SharedPreferences.Editor
 import com.google.gson.Gson
-import app.privvio.android.utils.SomeConstants
+import com.matrix.overlay.utils.SomeConstants
 import java.util.*
 
-/*
-Edited and written by Prasoon
-*/
+/**
+ * Edited and written by Prasoon
+**/
+
 class SharedPreference {
     fun saveOverlay(context: Context, lockedApp: List<String?>?) {
         val editor: Editor

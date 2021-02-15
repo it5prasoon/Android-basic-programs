@@ -1,4 +1,4 @@
-package app.privvio.android;
+package com.matrix.overlay;
 
 import org.junit.Test;
 

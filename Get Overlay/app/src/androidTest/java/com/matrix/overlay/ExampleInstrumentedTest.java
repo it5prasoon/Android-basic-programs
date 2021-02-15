@@ -1,4 +1,4 @@
-package com.matrix.android;
+package com.matrix.overlay;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

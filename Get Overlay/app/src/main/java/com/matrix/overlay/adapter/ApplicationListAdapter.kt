@@ -1,4 +1,4 @@
-package app.privvio.android.adapter
+package com.matrix.overlay.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,9 +10,9 @@ import android.widget.Switch
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import app.privvio.android.R
-import app.privvio.android.data.AppInfo
-import app.privvio.android.preference.SharedPreference
+import com.matrix.overlay.R
+import com.matrix.overlay.data.AppInfo
+import com.matrix.overlay.preference.SharedPreference
 import java.util.*
 
 /*

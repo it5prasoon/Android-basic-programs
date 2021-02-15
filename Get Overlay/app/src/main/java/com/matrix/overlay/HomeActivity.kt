@@ -1,4 +1,4 @@
-package app.privvio.android
+package com.matrix.overlay
 
 import android.annotation.SuppressLint
 import android.content.SharedPreferences
@@ -9,8 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import app.privvio.android.fragments.AllAppFragment
-import app.privvio.android.utils.SomeConstants
+import com.matrix.overlay.fragments.AllAppFragment
+import com.matrix.overlay.utils.SomeConstants
 
 /*
 Edited and written by Prasoon

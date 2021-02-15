@@ -1,4 +1,4 @@
-package app.privvio.android.services
+package com.matrix.overlay.services
 
 import android.content.BroadcastReceiver
 import android.content.Context

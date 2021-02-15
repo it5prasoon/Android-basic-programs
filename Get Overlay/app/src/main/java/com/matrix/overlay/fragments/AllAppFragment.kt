@@ -1,4 +1,4 @@
-package app.privvio.android.fragments
+package com.matrix.overlay.fragments
 
 import android.app.ProgressDialog
 import android.os.Bundle
@@ -8,10 +8,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import app.privvio.android.R
-import app.privvio.android.adapter.ApplicationListAdapter
-import app.privvio.android.adapter.GetListOfAppsAsyncTask
-import app.privvio.android.data.AppInfo
+import com.matrix.overlay.R
+import com.matrix.overlay.adapter.ApplicationListAdapter
+import com.matrix.overlay.adapter.GetListOfAppsAsyncTask
+import com.matrix.overlay.data.AppInfo
 import java.util.*
 
 /*

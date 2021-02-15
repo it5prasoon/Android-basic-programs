@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/application.iml" filepath="$PROJECT_DIR$/.idea/modules/application.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/application.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/application.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Get_Overlay.iml" filepath="$PROJECT_DIR$/.idea/modules/Get_Overlay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Get_Overlay.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Get_Overlay.app.iml" />
     </modules>
   </component>
 </project>

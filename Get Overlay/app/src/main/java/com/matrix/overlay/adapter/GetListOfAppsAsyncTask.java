@@ -1,4 +1,4 @@
-package app.privvio.android.adapter;
+package com.matrix.overlay.adapter;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -9,10 +9,10 @@ import android.os.AsyncTask;
 import java.util.ArrayList;
 import java.util.List;
 
-import app.privvio.android.data.AppInfo;
-import app.privvio.android.fragments.AllAppFragment;
-import app.privvio.android.preference.SharedPreference;
-import app.privvio.android.utils.SomeConstants;
+import com.matrix.overlay.data.AppInfo;
+import com.matrix.overlay.fragments.AllAppFragment;
+import com.matrix.overlay.preference.SharedPreference;
+import com.matrix.overlay.utils.SomeConstants;
 
 /*
 Edited and written by Prasoon

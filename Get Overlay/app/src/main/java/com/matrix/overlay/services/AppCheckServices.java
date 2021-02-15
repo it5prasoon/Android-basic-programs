@@ -1,4 +1,4 @@
-package app.privvio.android.services;
+package com.matrix.overlay.services;
 
 import android.app.ActivityManager;
 import android.app.Dialog;
@@ -24,13 +24,14 @@ import android.widget.ImageView;
 import androidx.annotation.RequiresApi;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.SortedMap;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.TreeMap;
 
-import app.privvio.android.preference.SharedPreference;
-import app.privvio.android.R;
+import com.matrix.overlay.preference.SharedPreference;
+import com.matrix.overlay.R;
 
 public class AppCheckServices extends Service {
 
@@ -200,7 +201,7 @@ public class AppCheckServices extends Service {
                 Log.d(TAG,"isEmpty Yes");
                 mpackageName = "";
             }else {
-                mpackageName = runningTask.get(runningTask.lastKey()).getPackageName();
+                mpackageName = Objects.requireNonNull(runningTask.get(runningTask.lastKey())).getPackageName();
                 Log.d(TAG,"isEmpty No : "+mpackageName);
             }
         }
