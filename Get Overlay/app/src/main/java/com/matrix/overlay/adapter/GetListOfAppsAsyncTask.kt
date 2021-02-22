@@ -13,7 +13,7 @@ import java.util.*
 /*
 Edited and written by Prasoon
 */
-open class GetListOfAppsAsyncTask(var container: AllAppFragment?) : AsyncTask<String?, Void?, List<AppInfo>?>() {
+open class GetListOfAppsAsyncTask(var container: AllAppFragment?) : CoroutineAsyncTask<String?, Void?, List<AppInfo>?>() {
     override fun doInBackground(vararg params: String?): List<AppInfo>? {
         val requiredAppsType = strings[0]
         val list = getListOfInstalledApp(container!!.activity)
