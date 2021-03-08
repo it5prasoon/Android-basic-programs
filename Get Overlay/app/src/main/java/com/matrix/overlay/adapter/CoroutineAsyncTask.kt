@@ -1,4 +1,4 @@
-package app.privvio.android.adapter
+package com.matrix.overlay.adapter
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

@@ -1,9 +1,7 @@
 package com.matrix.overlay
 
-import android.app.AlarmManager
 import android.app.AppOpsManager
 import android.app.Dialog
-import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -13,12 +11,14 @@ import android.os.Handler
 import android.os.Process
 import android.provider.Settings
 import android.util.Log
+import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
-import com.matrix.overlay.services.AlarmReceiver
-import com.matrix.overlay.services.AppCheckServices
+import com.matrix.overlay.services.AppForegroundCheckService
+
 
 /*
 Edited and written by Prasoon
@@ -53,24 +53,37 @@ class SplashActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
     }
 
-    fun startService() {
-        startService(Intent(this@SplashActivity, AppCheckServices::class.java))
-        try {
-            val alarmIntent = Intent(context, AlarmReceiver::class.java)
-            val manager = context!!.getSystemService(ALARM_SERVICE) as AlarmManager
-            val pendingIntent = PendingIntent.getBroadcast(context, 999, alarmIntent, 0)
-            val interval = 86400 * 1000 / 4
-            manager?.cancel(pendingIntent)
-            manager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval.toLong(), pendingIntent)
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
+    private fun startService() {
+        val input = "Get Overlay is Running!!"
+        val serviceIntent = Intent(this, AppForegroundCheckService::class.java)
+        serviceIntent.putExtra("inputExtra", input)
+        ContextCompat.startForegroundService(this, serviceIntent)
         Handler().postDelayed({
             val i = Intent(this@SplashActivity, HomeActivity::class.java)
             startActivity(i)
             finish()
         }, SPLASH_TIME_OUT.toLong())
     }
+
+     fun stopService(v: View?) {
+        val serviceIntent = Intent(this, AppForegroundCheckService::class.java)
+        stopService(serviceIntent)
+    }
+
+//    fun startService() {
+//        startService(Intent(this@SplashActivity, AppCheckServices::class.java))
+//        try {
+//            val alarmIntent = Intent(context, AlarmReceiver::class.java)
+//            val manager = context!!.getSystemService(ALARM_SERVICE) as AlarmManager
+//            val pendingIntent = PendingIntent.getBroadcast(context, 999, alarmIntent, 0)
+//            val interval = 86400 * 1000 / 4
+//            manager?.cancel(pendingIntent)
+//            manager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval.toLong(), pendingIntent)
+//        } catch (e: Exception) {
+//            e.printStackTrace()
+//        }
+//
+//    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         /** check if received result code
