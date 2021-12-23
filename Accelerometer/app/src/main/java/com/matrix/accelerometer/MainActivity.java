@@ -18,6 +18,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.view.Display;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private float sensorX;
     private float sensorY;
     private float sensorZ;
+    private RelativeLayout relativeLayout;
 
     private long lastSensorUpdateTime = 0;
     @Override
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         sensorManager.registerListener(this, accSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+        relativeLayout = findViewById(R.id.rel_layout);
 
 
         int screenWidth = size.x;
