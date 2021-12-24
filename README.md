@@ -6,6 +6,11 @@ This repository contains android basic programs which you use during your applic
 
 You can use these applications for integration to your large scale application without coding on your own.
 
+## Hot Topics
+<ul>
+  <li><a href="https://github.com/it5prasoon/Android-basic-programs/tree/main/MVPKotlin">MVP Begineer</a></li>
+  <li><a href="https://github.com/it5prasoon/Android-basic-programs/tree/main/MVVMKotlin">MVVM Begineer</a></li>
+</ul>
 
 <!-- CONTRIBUTING -->
 ## Contributing
