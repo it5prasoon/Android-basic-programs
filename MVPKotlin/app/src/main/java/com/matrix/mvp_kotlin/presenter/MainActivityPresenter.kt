@@ -1,7 +1,5 @@
 package com.matrix.mvp_kotlin.presenter
 
-import android.content.ContentValues.TAG
-import android.util.Log
 import com.matrix.mvp_kotlin.model.User
 
 
